@@ -1,0 +1,11 @@
+{
+    "tinygo.target": "pico-w",
+    "go.buildTags": "cortexm,baremetal,linux,arm,rp2040,rp,pico,pico-w,cyw43439",
+    "go.toolsEnvVars": {
+        "GOOS": "linux",
+        "GOARCH": "arm",
+        "GOROOT": "C:\\Users\\felix.goff\\AppData\\Local\\tinygo\\goroot-f2db4b1b4035270256e1ee3230aae76e26c5039a8637e20c0bb4b3056bc12b15",
+        "GOFLAGS": "-tags=cortexm,baremetal,linux,arm,rp2040,rp,pico,pico-w,cyw43439,tinygo,purego,osusergo,math_big_pure_go,gc.conservative,scheduler.cores,serial.usb"
+    },
+    "tinygo.port": "COM4"
+}
