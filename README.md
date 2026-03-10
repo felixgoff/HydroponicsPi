@@ -44,3 +44,12 @@ go install
 
 Compile code and flash it to the device:
 `tinygo flash -target=pico-w ./rPi.go`
+
+
+
+### Todo list:
+ - Fix the Wifi
+ ### Rules:
+ - Please dont vibe code the whole thing
+ - Asking Ai about help or what this does, recommended for solution and suggestions is okay.
+ - Use a smart AI
