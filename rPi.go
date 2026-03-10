@@ -118,11 +118,14 @@ var (
 
 func main() {
 
-	// DHT11 setup
-	sensor = dht.New(machine.GPIO15, dht.DHT11)
+	for !machine.Serial.DTR() {
+		time.Sleep(100 * time.Millisecond)
+	}
 
-	ssid := "ACAGuest"
-	pass := "FramtidNu"
+	// DHT11 setup
+
+	ssid := "Felix’s iPhone"
+	pass := "doorBella"
 
 	println("Connecting to WiFi...")
 
@@ -190,6 +193,8 @@ func main() {
 	logger.Info("listening",
 		slog.String("addr", "http://"+listenAddr.String()),
 	)
+
+	sensor = dht.New(machine.GPIO0, dht.DHT11)
 
 	for {
 		if listener.NumberOfReadyToAccept() == 0 {
