@@ -49,8 +49,8 @@ def read_sensors():
 def handle_request(conn):
     request = conn.recv(1024).decode()
     
-    # Only respond to GET /
-    if "GET /" in request:
+    # Only respond to GET /api
+    if "GET /api" in request:
         data = read_sensors()
         body = json.dumps(data)
         response = (
