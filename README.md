@@ -86,6 +86,3 @@ http://192.168.4.1
 - Do not vibe code the whole thing
 - Using AI for help, suggestions, and understanding what code does is fine. Using it to just generate everything without understanding it is NOT allowed.
 - Use a smart AI
-# HydroponicsPi
-
-This Github repository is for a school project.
